@@ -8,7 +8,7 @@ import pandas as pd
 import re
 
 driver = webdriver.Firefox()
-driver.get('http://herbaldb.farmasi.ui.ac.id/v3/index.php?v=kontensenyawa&sortby=&start=338')
+driver.get('http://herbaldb.farmasi.ui.ac.id/v3/index.php?v=kontensenyawa')
 
 page_num = driver.find_element(By.CSS_SELECTOR, 'table tbody tr td:last-child div:nth-of-type(2) div center > b')
 page_num = int(page_num.text)
